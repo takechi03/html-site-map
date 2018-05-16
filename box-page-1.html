@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="EN" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <!-- <link rel="shortcut icon" href="img/fav.png"> -->
+    <!-- Author Meta -->
+    <meta name="author" content="codepixer">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Map Kingpower</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> -->
+    <!--
+    CSS
+    ============================================= -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+    <div class="map-kingpower">
+        <div class="container">
+            <h1 style="text-align: center; color: #ffffff ;margin: 0.5em auto;">Please select location</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12">
+                    <div class="example-2 card tranform-box-page1">
+                        <div class="wrapper" style="background-image: url(img/5-hilights-king-power-rangnam-36.jpg);">
+
+                            <div class="data">
+                                <div class="content">
+                                    <h1 class="title">
+                                        <a href="#">Rangnum</a>
+                                    </h1>
+                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    <div class="detail">
+                                            <div class="language">
+                                                <div class="offset-lg-3 col-lg-2 col-xs-12">
+                                                    <i class="fa-th"></i>
+                                                    <!-- <img class="img-responsive" src="img/icon-en.png"> -->
+                                                </div>
+                                                <div class="col-lg-2 col-xs-12">
+                                                    <img src="img/icon-TH.png">
+                                                </div>
+                                                <div class="col-lg-2 col-xs-12">
+                                                    <img src="img/icon-cn.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var window_width_video = $(window).width(),
+            window_height_video = $(window).height(),
+            heightpicture;
+
+        heightpicture = window_height_video;
+        $(".map-kingpower").css("height", window_height_video - 50);
+        $(".map-kingpower").css("width", window_width_video);
+
+        $(".map-kingpower div.wrapper").css({
+            "min-height": heightpicture
+        });
+        $(".card .content").css({
+            "height": heightpicture
+        });
+
+        if (window_width_video > 768) {
+            $(".map-kingpower").css("overflow", "hidden");
+        }
+
+        console.log(window_height_video + " : " + window_width_video + " : MIN-HEIGHT = " + heightpicture);
+    </script>
+</body>
+
+</body>
