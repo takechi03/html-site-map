@@ -20,8 +20,12 @@
     <!--
     CSS
     ============================================= -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="css/assets/docs.css" rel="stylesheet">
+    <link href="css/css/flag-icon.css" rel="stylesheet">
 
 
 </head>
@@ -33,7 +37,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-xs-12">
+                <div class="col-lg-12 col-xl-12">
                     <div class="example-2 card tranform-box-page1">
                         <div class="wrapper" style="background-image: url(img/5-hilights-king-power-rangnam-36.jpg);">
 
@@ -44,19 +48,24 @@
                                     </h1>
                                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                                     <div class="detail">
-                                            <div class="language">
-                                                <div class="offset-lg-3 col-lg-2 col-xs-12">
-                                                    <i class="fa-th"></i>
-                                                    <!-- <img class="img-responsive" src="img/icon-en.png"> -->
+                                        <div class="language">
+                                            <div class="offset-lg-3 col-lg-2">
+                                                <div class="flag-wrapper">
+                                                    <div class="img-thumbnail flag flag-icon-background flag-icon-us"></div>
                                                 </div>
-                                                <div class="col-lg-2 col-xs-12">
-                                                    <img src="img/icon-TH.png">
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <div class="flag-wrapper">
+                                                    <div class="img-thumbnail flag flag-icon-background flag-icon-th"></div>
                                                 </div>
-                                                <div class="col-lg-2 col-xs-12">
-                                                    <img src="img/icon-cn.png">
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <div class="flag-wrapper">
+                                                    <div class="img-thumbnail flag flag-icon-background flag-icon-cn"></div>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -71,6 +80,7 @@
     <script>
         var window_width_video = $(window).width(),
             window_height_video = $(window).height(),
+            flagwrapper = $(".flag-wrapper").width(),
             heightpicture;
 
         heightpicture = window_height_video;
@@ -84,6 +94,10 @@
             "height": heightpicture
         });
 
+        $(".flag-wrapper").css({
+            "height": flagwrapper,
+            "width": flagwrapper
+        })
         if (window_width_video > 768) {
             $(".map-kingpower").css("overflow", "hidden");
         }
