@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <div class="map-kingpower">
+    <div class="map-kingpower-page-1">
         <div class="container">
             <h1 style="text-align: center; color: #ffffff ;margin: 0.5em auto;">Please select location</h1>
         </div>
@@ -76,34 +76,8 @@
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        var window_width_video = $(window).width(),
-            window_height_video = $(window).height(),
-            flagwrapper = $(".flag-wrapper").width(),
-            heightpicture;
-
-        heightpicture = window_height_video;
-        $(".map-kingpower").css("height", window_height_video - 50);
-        $(".map-kingpower").css("width", window_width_video);
-
-        $(".map-kingpower div.wrapper").css({
-            "min-height": heightpicture
-        });
-        $(".card .content").css({
-            "height": heightpicture
-        });
-
-        $(".flag-wrapper").css({
-            "height": flagwrapper,
-            "width": flagwrapper
-        });
-        if (window_width_video > 768) {
-            $(".map-kingpower").css("overflow", "hidden");
-        }
-
-        console.log(window_height_video + " : " + window_width_video + " : MIN-HEIGHT = " + heightpicture);
-    </script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/main.js"></script>
 </body>
 
 </body>

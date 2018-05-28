@@ -160,9 +160,16 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.map-kingpower {
+.map-kingpower, .map-kingpower-page-1 {
   height: 100%
 }
+
+.map-kingpower-page-1 .container{
+  max-height: 100% !important;
+  max-width: 100%;
+  padding: 0 5%;
+}
+
 .map-kingpower .container {
   max-height: 100% !important;
   max-width: 100%;
@@ -175,7 +182,4 @@ body {
 }
 .img-responsive{
   width: 100%
-}
-.flag-wrapper {
-  border-radius: 100%;
 }

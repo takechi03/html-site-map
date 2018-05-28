@@ -20,8 +20,12 @@
     <!--
     CSS
     ============================================= -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="css/assets/docs.css" rel="stylesheet">
+    <link href="css/css/flag-icon.css" rel="stylesheet">
 
 
 </head>
@@ -175,34 +179,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-        var window_width_video = $(window).width(),
-            window_height_video = $(window).height(),
-            heightpicture,
-            data = "translateY(calc(62% + 5em))";
-
-        heightpicture = window_height_video / 2.40 - 30;
-        $(".map-kingpower").css("height", window_height_video);
-        $(".map-kingpower").css("width", window_width_video);
-
-        $(".map-kingpower div.wrapper").css({
-            "min-height": heightpicture
-        });
-
-        $(".card .content").css({
-            "height": heightpicture
-        });
-
-        $(".flag-wrapper").css({
-            "height": flagwrapper,
-            "width": flagwrapper
-        });
-        if (window_width_video > 768) {
-            $(".map-kingpower").css("overflow", "hidden");
-        }
-
-        console.log(window_height_video + " : " + window_width_video + " : MIN-HEIGHT = " + heightpicture);
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </body>
