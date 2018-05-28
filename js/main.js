@@ -23,6 +23,10 @@ $(".card .content").css({
     "height": heightpicture
 });
 
+$(".map-kingpower-page-1 .card .content").css({
+    "height": window_height_video
+});
+
 $(".flag-wrapper").css({
     "height": flagwrapper,
     "width": flagwrapper
