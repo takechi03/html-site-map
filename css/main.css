@@ -78,7 +78,13 @@
   -webkit-transform: translateY(-60px);
           transform: translateY(-60px);
 }
-
+.card2 .data {
+  position: relative;
+  display: inline;
+}
+.card2 .content {
+  padding: 5em;
+}
 .example-2 .wrapper {
   background: center/cover no-repeat;
 }
