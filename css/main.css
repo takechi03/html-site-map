@@ -122,7 +122,7 @@
 .example-2 .data {
   color: #fff;
   -webkit-transform: translateY(calc(50% + 5em));
-  transform: translateY(calc(50% + 5em));
+  transform: translateY(calc(50% + 14em));
 }
 .tranform-box-page1 .data{
   transform: translateY(calc(60% + 5em));
